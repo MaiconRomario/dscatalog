@@ -1,3 +1,4 @@
+import { formartprice } from 'util/formatters';
 import './style.css';
 
 type Props = {
@@ -8,7 +9,7 @@ const Productprice = ({ price }: Props) => {
     <>
       <div className="product-price-container">
         <span>R$</span>
-        <h3>{price}</h3>
+        <h3>{formartprice(price)}</h3>
       </div>
     </>
   );
