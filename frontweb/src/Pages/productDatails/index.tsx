@@ -1,15 +1,18 @@
 import Productprice from 'components/ProductPrice';
 import './style.css';
 import { ReactComponent as ArrowIcon } from 'assets/images/Seta.svg';
+import { Link } from 'react-router-dom';
 
 const ProductDatails = () => {
   return (
     <div className="product-details-container">
       <div className="product-details-card base-card">
-        <div className="goback-container">
-          <ArrowIcon></ArrowIcon>
-          <h2>Voltar</h2>
-        </div>
+        <Link to="/products" className="goback-link">
+          <div className="goback-container">
+            <ArrowIcon></ArrowIcon>
+            <h2>Voltar</h2>
+          </div>
+        </Link>
         <div className="row">
           <div className="col-xl-6">
             <div className="img-container">
